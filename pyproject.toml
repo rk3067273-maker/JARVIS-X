@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools==68.1.2", "wheel==0.42.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "jarvis-x"
+version = "0.2.0b1"
+description = "A modular, security-conscious AI assistant foundation"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = []
+
+[project.scripts]
+jarvis-x = "jarvis_x.__main__:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["jarvis_x*"]

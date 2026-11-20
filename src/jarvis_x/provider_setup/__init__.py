@@ -1,0 +1,86 @@
+"""User-controlled provider setup, discovery, and model-routing primitives."""
+
+from jarvis_x.provider_setup.cache import InMemoryModelCache, ModelCache
+from jarvis_x.provider_setup.control_plane import (
+    AgentRouterUnsupportedControlPlane,
+    ControlPlaneError,
+    GeminiMetadataControlPlane,
+    ProviderControlPlane,
+)
+from jarvis_x.provider_setup.credentials import (
+    CredentialMetadata,
+    CredentialStore,
+    InMemoryCredentialStore,
+    SecretBuffer,
+    mask_api_key,
+)
+from jarvis_x.provider_setup.models import (
+    ChargeRisk,
+    DiscoveredModel,
+    DiscoveryPage,
+    DiscoveryResult,
+    DiscoveryStatus,
+    ModelCacheEntry,
+    ProviderId,
+    VerificationOperation,
+    VerificationResult,
+    VerificationStatus,
+)
+from jarvis_x.provider_setup.routing import (
+    ModelCapability,
+    ModelPreference,
+    ModelRouter,
+    ReasoningLevel,
+    RoutableModel,
+    RoutingDecision,
+    RoutingMode,
+    RoutingOutcome,
+    RoutingPreferences,
+    SpeedLevel,
+    TaskClassifier,
+    TaskRequirements,
+)
+from jarvis_x.provider_setup.service import (
+    ManualModelConfiguration,
+    ProviderSettingsService,
+    ProviderSettingsSnapshot,
+)
+
+__all__ = [
+    "AgentRouterUnsupportedControlPlane",
+    "ChargeRisk",
+    "ControlPlaneError",
+    "CredentialMetadata",
+    "CredentialStore",
+    "DiscoveredModel",
+    "DiscoveryPage",
+    "DiscoveryResult",
+    "DiscoveryStatus",
+    "GeminiMetadataControlPlane",
+    "InMemoryCredentialStore",
+    "InMemoryModelCache",
+    "ManualModelConfiguration",
+    "ModelCache",
+    "ModelCacheEntry",
+    "ModelCapability",
+    "ModelPreference",
+    "ModelRouter",
+    "ProviderControlPlane",
+    "ProviderId",
+    "ProviderSettingsService",
+    "ProviderSettingsSnapshot",
+    "ReasoningLevel",
+    "RoutableModel",
+    "RoutingDecision",
+    "RoutingMode",
+    "RoutingOutcome",
+    "RoutingPreferences",
+    "SecretBuffer",
+    "SpeedLevel",
+    "TaskClassifier",
+    "TaskRequirements",
+    "VerificationOperation",
+    "VerificationResult",
+    "VerificationStatus",
+    "mask_api_key",
+]

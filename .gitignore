@@ -1,0 +1,102 @@
+# Local Python environment
+.venv/
+venv/
+env/
+.tox/
+
+# Local configuration and secrets
+.env
+.env.*
+.env.swp
+!.env.example
+
+# Local credentials and CI-only secret configuration
+secrets/
+.secrets/
+credentials/
+keys/
+keystores/
+certs/
+credentials*.json
+service-account*.json
+service_account*.json
+client-secret*.json
+client_secret*.json
+firebase-adminsdk*.json
+google-services.json
+agconnect-services.json
+*.secrets.json
+keystore.properties
+key.properties
+signing.properties
+secrets.properties
+*.local.properties
+.npmrc
+.pypirc
+.netrc
+.github/secrets/
+.github/*.local.yml
+.github/*.local.yaml
+.ci/secrets/
+ci-secrets.*
+
+# Signing keys, private keys, and certificates
+*.jks
+*.keystore
+*.p12
+*.pfx
+*.pem
+*.key
+*.crt
+*.cer
+*.der
+*.csr
+*.gpg
+*.pgp
+*.mobileprovision
+
+# Python-generated files
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Build and coverage output
+build/
+dist/
+.coverage
+htmlcov/
+*.apk
+*.aab
+*.ap_
+*.dex
+*.class
+
+# Android/Gradle machine-local files and generated output
+local.properties
+.gradle/
+.kotlin/
+.android/
+android-sdk/
+Android/Sdk/
+.cxx/
+externalNativeBuild/
+captures/
+*.iml
+
+# JARVIS X runtime data
+data/
+logs/
+runtime/
+*.log
+*.db
+*.sqlite
+*.sqlite3
+
+# Editor and operating-system files
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
